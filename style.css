@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display= trocar');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: black;
+    color: white
+}
+
+.titulo-destaque{
+    color: #9FA5A8;
+}
+
+.apresentacao {
+    margin:10% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    font-family: 'Inria Serif', serif;
+}
+
+.apresentacao__conteudo__texto {
+    font-size:24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao__links__link {
+    background-color: #F1F1F1;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 19.48px 0;
+    text-decoration: none;
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+}
