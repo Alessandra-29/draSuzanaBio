@@ -1,23 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display= trocar');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    box-sizing: border-box;
+    min-height: 100vh;
     background-color: black;
-    color: white
+    color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.titulo-destaque{
+.titulo-destaque {
     color: #9FA5A8;
 }
 
 .apresentacao {
-    margin:10% 15%;
+    margin: 10% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -27,6 +28,7 @@ body {
     width: 615px;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .apresentacao__conteudo__titulo {
@@ -35,13 +37,13 @@ body {
 }
 
 .apresentacao__conteudo__texto {
-    font-size:24px;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
 }
 
 .apresentacao__links {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .apresentacao__links__link {
@@ -53,6 +55,36 @@ body {
     font-weight: 600;
     padding: 19.48px 0;
     text-decoration: none;
-    color:black;
-    font-family: 'Montserrat', sans-serif;
+    color: black;
+    margin-bottom: 10px;
+}
+
+/* Estilos responsivos para dispositivos móveis */
+@media only screen and (max-width: 768px) {
+    .apresentacao {
+        flex-direction: column; /* Altera o fluxo dos itens para uma coluna em dispositivos móveis */
+        align-items: center;
+    }
+
+    .imagem {
+        display: block; /* Torna a imagem visível em dispositivos menores */
+        width: 60%; /* Reduz o tamanho da imagem */
+        max-width: 300px;
+        margin: 0 auto 20px; /* Adiciona margem abaixo da imagem */
+    }
+
+    .apresentacao__conteudo {
+        width: 90%; /* Ajuste a largura do conteúdo conforme necessário */
+        margin-top: 20px; /* Adiciona margem superior para separar a imagem do conteúdo */
+    }
+
+    .apresentacao__links {
+        flex-direction: column; /* Altera a direção dos botões para uma coluna em dispositivos móveis */
+        align-items: center; /* Centraliza os botões */
+    }
+
+    .apresentacao__links__link {
+        width: 100%; /* Define a largura completa para os botões */
+        max-width: 280px;
+    }
 }
